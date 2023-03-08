@@ -1,5 +1,5 @@
 import streamlit as st
-from ai import load_LLM
+from ai import load_LLM, prompt
 
 llm = load_LLM()
 
