@@ -1,9 +1,9 @@
+import streamlit as st
 from langchain import PromptTemplate
 from langchain.llms import OpenAI
-from decouple import config
 import os
 
-os.environ["OPENAI_API_KEY"] = config('KEY')
+os.environ["OPENAI_API_KEY"] = st.secrets.credentials.key
 
 template = """
     Below is an email that may be poorly worded.
