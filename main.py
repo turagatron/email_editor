@@ -29,7 +29,7 @@ with col1:
 with col2:
         option_dialect = st.selectbox(
             'Which English dialect would you like?',
-            ('American English', 'British English','Indian English')
+            ('American English', 'British English')
         )
 
 def get_text():
